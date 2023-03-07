@@ -18,8 +18,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_07_104439) do
     t.integer "quantity"
     t.string "category"
     t.integer "price"
-    t.date "date_created"
-    t.date "date_updated"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["shopping_list_id"], name: "index_items_on_shopping_list_id"
@@ -29,9 +27,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_07_104439) do
     t.integer "user_id", null: false
     t.string "name"
     t.text "description"
-    t.string "created_by"
-    t.date "date_created"
-    t.date "date_updated"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_shopping_lists_on_user_id"
@@ -42,7 +37,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_07_104439) do
     t.string "email"
     t.string "password_digest"
     t.string "contact"
-    t.date "date_created"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

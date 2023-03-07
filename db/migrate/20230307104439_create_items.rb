@@ -7,8 +7,8 @@ class CreateItems < ActiveRecord::Migration[7.0]
       t.integer :quantity
       t.string :category
       t.integer :price
-      t.date :date_created
-      t.date :date_updated
+      # t.date :date_created
+      # t.date :date_updated
 
       t.timestamps
     end
