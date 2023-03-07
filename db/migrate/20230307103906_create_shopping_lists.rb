@@ -5,8 +5,8 @@ class CreateShoppingLists < ActiveRecord::Migration[7.0]
       t.string :name
       t.text :description
       t.string :created_by
-      t.date :created_at
-      t.date :updated_at
+      t.date :date_created
+      t.date :date_updated
 
       t.timestamps
     end
