@@ -18,6 +18,14 @@ gem "puma", "~> 5.0"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+# Used to encode and decode json web token"
+gem "jwt"
+
+
+# Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
+gem "rack-cors"
+
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
